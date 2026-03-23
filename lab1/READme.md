@@ -16,5 +16,5 @@ Docker
 3. [Проверка установки Docker](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-start.png)
 4. [Команды Docker CLI:](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-images.png)
 5. [Docker ps -a](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ps-a.jpg)
-6. [Попытка сделать индивидуальное задание:]
+6. [Попытка сделать индивидуальное задание:](https://github.com/dyx4liss/analytics-docker-labs/blob/main/docker-indiv-attempt.jpg)
 
