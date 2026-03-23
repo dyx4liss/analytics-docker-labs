@@ -14,4 +14,4 @@ Docker
 1. Установка VirtualBox
 2. Развертывание виртуальной машины из образа ETL+devops_26.ova
 3. Проверка установки Docker 
-[Image alt](https://github.com/dyx4liss/analytics-docker-lab/raw/main/[{path}/image.png](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ver.png))
+[Image alt](https://github.com/dyx4liss/analytics-docker-lab/raw/main/https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ver.png)
