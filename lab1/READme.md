@@ -18,3 +18,6 @@ Docker
 5. [Docker ps -a](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ps-a.jpg)
 6. [Попытка сделать индивидуальное задание:](https://github.com/dyx4liss/analytics-docker-labs/blob/main/docker-indiv-attempt.jpg)
 
+Выводы:
+
+    Изучены основные команды работы с докер образами и контейнерами;
