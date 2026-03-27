@@ -19,6 +19,7 @@ Docker
 
 Индивидуальное задание, вариант 7. 
 1. Запуск контейнера
+
    ![Запуск контейнера](container-init.png)
 2. Подключение к postgreSQL ![Подключение к postgreSQL](postgresql-connect.png)
 3. Cоздание таблицы с парой полей ![Cоздание таблицы с парой полей](table-create.png)
