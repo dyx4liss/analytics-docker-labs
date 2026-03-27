@@ -18,7 +18,8 @@ Docker
 5. [Docker ps -a](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ps-a.jpg)
 
 Индивидуальное задание, вариант 7. 
-1. Запуск контейнера ![Запуск контейнера](container-init.png)
+1. Запуск контейнера
+   ![Запуск контейнера](container-init.png)
 2. Подключение к postgreSQL ![Подключение к postgreSQL](postgresql-connect.png)
 3. Cоздание таблицы с парой полей ![Cоздание таблицы с парой полей](table-create.png)
 
