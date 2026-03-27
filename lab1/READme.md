@@ -16,8 +16,12 @@ Docker
 3. [Проверка установки Docker](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-start.png)
 4. [Команды Docker CLI:](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-images.png)
 5. [Docker ps -a](https://github.com/dyx4liss/analytics-docker-labs/blob/main/lab1/docker-ps-a.jpg)
-6. [Попытка сделать индивидуальное задание:](https://github.com/dyx4liss/analytics-docker-labs/blob/main/docker-indiv-attempt.jpg)
+
+Индивидуальное задание, вариант 7. 
+1. Запуск контейнера ![Запуск контейнера](container-init.png)
+2. Подключение к postgreSQL ![Подключение к postgreSQL](postgresql-connect.png)
+3. Cоздание таблицы с парой полей ![Cоздание таблицы с парой полей](table-create.png)
 
 Выводы:
 
-Изучены основные команды работы с докер образами и контейнерами
+Изучены основные команды работы с докер образами и контейнерами, в 
