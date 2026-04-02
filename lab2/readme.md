@@ -70,7 +70,7 @@ matplotlib>=3.4.0
 ![docker](docker-build.png)
 
 ## Запуск контейнера и выгрузка графика в файл plot.png
-![cuntaineer-start](cont-start.png)
+![cuntaineer-start](contr-start.png)
 
 ## Вывод
 ![plot.png](solved.png)
