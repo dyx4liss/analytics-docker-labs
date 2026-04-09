@@ -24,7 +24,8 @@
 
 <details>
   <summary>prometheus-configmap.yaml</summary>
-```
+
+  ```
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -38,10 +39,13 @@ data:
         static_configs:
           - targets: ['localhost:9090']
 ```
+  
 </details>
 
-prometheus-deployment.yaml
-```
+<details>
+  <summary>prometheus-deployment.yaml</summary>
+
+  ```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -78,7 +82,11 @@ spec:
       - name: storage
         emptyDir: {}
 ```
-prometheus-service.yaml
+</details>
+
+<details>
+<summary>prometheus-service.yaml</summary>
+  
 ```
 apiVersion: v1
 kind: Service
@@ -92,8 +100,12 @@ spec:
       port: 9090
       targetPort: 9090
 ```
-grafana-datasources-configmap.yaml
-```
+</details>
+
+<details>
+<summary>grafana-datasources-configmap.yaml</summary>
+
+  ```
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -108,8 +120,12 @@ data:
         url: http://prometheus-service:9090
         isDefault: true
 ```
-grafana-deployment.yaml
-```
+</details>
+
+<details>
+<summary>grafana-deployment.yaml</summary>
+
+  ```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -144,8 +160,12 @@ spec:
         configMap:
           name: grafana-datasources
 ```
-grafana-service.yaml
-```
+</details>
+
+<details>
+<summary>grafana-service.yaml</summary>
+
+  ```
 apiVersion: v1
 kind: Service
 metadata:
@@ -160,4 +180,30 @@ spec:
       targetPort: 3000
       nodePort: 30300
 ```
+</details>
+
+### Сетевые интерфейсы:
+prometheus-service (ClusterIP, порт 9090) — доступен только внутри кластера для связи Grafana с Prometheus.
+grafana-service (NodePort, порт 30300 на узле) — открывает доступ к Grafana из браузера.
+
+### 2.2 Применение манифестов
+```
+kubectl apply -f prometheus-configmap.yaml
+kubectl apply -f prometheus-deployment.yaml
+kubectl apply -f prometheus-service.yaml
+kubectl apply -f grafana-datasources-configmap.yaml
+kubectl apply -f grafana-deployment.yaml
+kubectl apply -f grafana-service.yaml
+```
+Ошибка при первом применении: error: no objects passed to apply – в файле grafana-service.yaml отсутствовали apiVersion, kind, metadata. После исправления всё применилось.
+
+### 2.3 Проверка взаимодействия
+[!ERROR](screenshots/get-pods.png)
+
+---
+## Итоги:
+Интерфейс Grafana (192.168.49.2:30300)
+[!ERROR](screenshots/grafana.png)
+
+
 
