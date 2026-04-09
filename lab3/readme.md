@@ -203,6 +203,7 @@ kubectl apply -f grafana-service.yaml
 ---
 ## Итоги:
 Интерфейс Grafana (192.168.49.2:30300)
+
 [!ERROR](screenshots/grafana.png)
 
 
