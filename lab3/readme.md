@@ -198,13 +198,13 @@ kubectl apply -f grafana-service.yaml
 Ошибка при первом применении: error: no objects passed to apply – в файле grafana-service.yaml отсутствовали apiVersion, kind, metadata. После исправления всё применилось.
 
 ### 2.3 Проверка взаимодействия
-[!ERROR](screenshots/get-pods.png)
+![!ERROR](screenshots/get-pods.png)
 
 ---
 ## Итоги:
 Интерфейс Grafana (192.168.49.2:30300)
 
-[!ERROR](screenshots/grafana.png)
+![!ERROR](screenshots/grafana.png)
 
 
 
